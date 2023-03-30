@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <mian>
+      <form class="form-new-document" encytpe="multipart/form-data">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 my-3">
+              <input class="form-control" name="title" placeholder="عنوان" />
+            </div>
+            <div class="col-12 col-sm-6 my-3">
+              <input class="form-control" name="writer" placeholder="نویسنده" />
+            </div>
+            <div class="col-12 col-sm-6 my-3">
+              <input class="form-control" name="subject" placeholder="موضوع" />
+            </div>
+            <div class="col-12 col-sm-6 my-3">
+              <input
+                class="form-control"
+                name="total-page"
+                placeholder="تعداد صفحه"
+              />
+            </div>
+            <div class="col-12 col-sm-6 my-3">
+              <input
+                type="date"
+                class="form-control"
+                placeholder="تاریخ انتشار"
+                name="release-date"
+              />
+            </div>
+            <div class="col-12 col-sm-6 my-3">
+              <input class="form-control" placeholder="شابک" name="ISBN" />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            name="description"
+            placeholder="توضیحات"
+          ></textarea>
+          <div class="row my-5">
+            <div class="col-12 col-sm-4 my-2 my-sm-0">
+              <select name="category" class="form-control">
+                <option value="1">دسته بندی1</option>
+                <option value="2">دسته بندی2</option>
+                <option value="3">دسته بندی3</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-4 my-2 my-sm-0">
+              <select name="status" class="form-control">
+                <option value="1">وضعیت 1</option>
+                <option value="2">وضعیت 2</option>
+                <option value="3">وضعیت 3</option>
+              </select>
+            </div>
+            <div class="col-12 col-sm-4 my-2 my-sm-0">
+              <label for="image-file" class="d-block">
+                <input
+                  type="file"
+                  name="image-file"
+                  class="d-none"
+                  id="image-file"
+                />
+                <div class="w-100">
+                  <div
+                    class="p-2 border border-2 border-dark w-100 d-flex justify-content-center align-items-center"
+                    style="border-style: dashed !important; cursor: pointer"
+                  >
+                    عکس
+                  </div>
+                </div>
+              </label>
+            </div>
+          </div>
+          <div class="my-5 my-sm-0">
+            <label for="pdf-file" class="d-block">
+              <input type="file" name="pdf-file" class="d-none" id="pdf-file" />
+              <div class="w-100">
+                <div
+                  class="p-2 border border-2 border-dark w-100 d-flex justify-content-center align-items-center"
+                  style="border-style: dashed !important; cursor: pointer"
+                >
+                  فایل
+                </div>
+              </div>
+            </label>
+          </div>
+          <button type="submit" class="w-100 btn btn-primary mt-5">
+            ذخیره
+          </button>
+        </div>
+      </form>
+    </mian>
+    <script src="./js/new-file.js"></script>
+  </body>
+</html>

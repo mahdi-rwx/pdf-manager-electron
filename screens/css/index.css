@@ -1,0 +1,5 @@
+.file-card:hover .file-details{
+    opacity: 1 !important;
+    background-color: gray;
+    transition: .3s;
+}

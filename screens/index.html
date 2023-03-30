@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Managte PDF File</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row pt-5">
+        <div class="col-9 col-sm-11">
+          <div class="row">
+            <div class="col-6 mb-5">
+              <input class="form-control w-75" placeholder="جستوجو" />
+            </div>
+            <div class="col-6 mb-5">
+              <select class="form-select w-50">
+                <option selected>دسته بندی</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="col-6 mb-5">
+              <select class="form-select w-50">
+                <option selected>ترتیب بر اساس</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="col-6 mb-5">
+              <div class="form-group form-check">
+                <label class="form-check-label" for="read-status">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="read-status"
+                  />
+                  خوانده شده
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center">
+            <button
+              class="add-new-file text-dark btn btn-outline-light text-nowrap"
+            >
+              فایل جدید
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container files">
+      <div class="row"></div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
